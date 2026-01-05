@@ -6,7 +6,7 @@
 #    By: abidaux <abidaux@student.42lehavre.fr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/03 18:29:13 by abidaux           #+#    #+#              #
-#    Updated: 2026/01/03 19:35:09 by abidaux          ###   ########.fr        #
+#    Updated: 2026/01/03 20:50:36 by abidaux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ NAME		= ClapTrap
 # Folders
 SRC_DIR		= src
 OBJ_DIR		= obj
-INC_DIR		= .
+INC_DIR		= include
 
 # Sources
 SRC_FILES	=	ClapTrap.cpp \

@@ -6,12 +6,11 @@
 /*   By: abidaux <abidaux@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/03 19:28:08 by abidaux           #+#    #+#             */
-/*   Updated: 2026/01/03 20:23:31 by abidaux          ###   ########.fr       */
+/*   Updated: 2026/01/05 15:05:09 by abidaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
-#include <iostream>
+#include "../include/ScavTrap.hpp"
 
 int main(void)
 {

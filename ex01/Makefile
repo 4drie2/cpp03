@@ -6,7 +6,7 @@
 #    By: abidaux <abidaux@student.42lehavre.fr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/03 18:29:13 by abidaux           #+#    #+#              #
-#    Updated: 2026/01/03 19:35:09 by abidaux          ###   ########.fr        #
+#    Updated: 2026/01/05 15:03:53 by abidaux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,15 +15,16 @@ CXX			= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 
 # Project name
-NAME		= ClapTrap
+NAME		= ScavTrap
 
 # Folders
 SRC_DIR		= src
 OBJ_DIR		= obj
-INC_DIR		= .
+INC_DIR		= include
 
 # Sources
 SRC_FILES	=	ClapTrap.cpp \
+				ScavTrap.cpp \
                 main.cpp
 
 # Object files

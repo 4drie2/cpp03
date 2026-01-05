@@ -6,11 +6,11 @@
 /*   By: abidaux <abidaux@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/03 18:38:13 by abidaux           #+#    #+#             */
-/*   Updated: 2026/01/03 20:08:35 by abidaux          ###   ########.fr       */
+/*   Updated: 2026/01/03 20:51:05 by abidaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ClapTrap.hpp"
+#include "../include/ClapTrap.hpp"
 
 ClapTrap::ClapTrap(std::string name) {
     std::cout << "ClapTrap " << name << " created!" << std::endl;

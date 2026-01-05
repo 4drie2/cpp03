@@ -6,11 +6,11 @@
 /*   By: abidaux <abidaux@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/03 19:28:08 by abidaux           #+#    #+#             */
-/*   Updated: 2026/01/03 20:06:18 by abidaux          ###   ########.fr       */
+/*   Updated: 2026/01/03 20:51:01 by abidaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "../include/ClapTrap.hpp"
 
 int main(void)
 {
