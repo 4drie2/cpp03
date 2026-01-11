@@ -6,11 +6,19 @@
 /*   By: abidaux <abidaux@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 17:04:42 by abidaux           #+#    #+#             */
-/*   Updated: 2026/01/05 17:20:21 by abidaux          ###   ########.fr       */
+/*   Updated: 2026/01/11 05:29:25 by abidaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/FragTrap.hpp"
+
+FragTrap::FragTrap() : ClapTrap()
+{
+    this->_hitPoints = 100;
+    this->_energyPoints = 100;
+    this->_attackDamage = 30;
+    std::cout << "FragTrap default constructor called" << std::endl;
+}
 
 FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
@@ -18,6 +26,20 @@ FragTrap::FragTrap(std::string name) : ClapTrap(name)
     this->_energyPoints = 100;
     this->_attackDamage = 30;
     std::cout << "FragTrap " << this->_name << " constructor called" << std::endl;
+}
+
+FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other)
+{
+    std::cout << "FragTrap copy constructor called" << std::endl;
+}
+
+FragTrap& FragTrap::operator=(const FragTrap& other)
+{
+    std::cout << "FragTrap copy assignment operator called" << std::endl;
+    if (this != &other) {
+        ClapTrap::operator=(other);
+    }
+    return *this;
 }
 
 FragTrap::~FragTrap()

@@ -6,7 +6,7 @@
 /*   By: abidaux <abidaux@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/03 18:37:00 by abidaux           #+#    #+#             */
-/*   Updated: 2026/01/05 17:18:07 by abidaux          ###   ########.fr       */
+/*   Updated: 2026/01/11 05:29:25 by abidaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 #include <string>
 
 class ClapTrap{
-    public: 
+    public:
+        ClapTrap();
         ClapTrap(std::string name);
         ClapTrap(const ClapTrap& other);
         ClapTrap& operator=(const ClapTrap& other);

@@ -6,17 +6,36 @@
 /*   By: abidaux <abidaux@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/03 20:53:45 by abidaux           #+#    #+#             */
-/*   Updated: 2026/01/05 17:20:21 by abidaux          ###   ########.fr       */
+/*   Updated: 2026/01/11 05:29:25 by abidaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/ScavTrap.hpp"
+
+ScavTrap::ScavTrap() : ClapTrap() {
+    std::cout << "ScavTrap default constructor called" << std::endl;
+    _hitPoints = 100;
+    _energyPoints = 50;
+    _attackDamage = 20;
+}
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name) {
     std::cout << "ScavTrap " << name << " created!" <<  std::endl;
     _hitPoints = 100;
     _energyPoints = 50;
     _attackDamage = 20;
+}
+
+ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other) {
+    std::cout << "ScavTrap copy constructor called" << std::endl;
+}
+
+ScavTrap& ScavTrap::operator=(const ScavTrap& other) {
+    std::cout << "ScavTrap copy assignment operator called" << std::endl;
+    if (this != &other) {
+        ClapTrap::operator=(other);
+    }
+    return *this;
 }
 
 ScavTrap::~ScavTrap() {

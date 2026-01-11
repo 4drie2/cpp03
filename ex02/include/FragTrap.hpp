@@ -6,7 +6,7 @@
 /*   By: abidaux <abidaux@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 16:54:04 by abidaux           #+#    #+#             */
-/*   Updated: 2026/01/05 17:20:21 by abidaux          ###   ########.fr       */
+/*   Updated: 2026/01/11 05:29:25 by abidaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,10 @@
 
 class FragTrap : public ClapTrap {
     public:
+        FragTrap();
         FragTrap(std::string name);
+        FragTrap(const FragTrap& other);
+        FragTrap& operator=(const FragTrap& other);
         ~FragTrap();
         void    attack(const std::string& target);
         void    highFivesGuys(void);
